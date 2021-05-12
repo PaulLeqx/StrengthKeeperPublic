@@ -1,0 +1,137 @@
+.about-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .about-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+}
+.aboutme-container{
+  position: relative;
+  width: 1024px;
+  min-width: 1024px;
+  margin: 0 auto;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .aboutme-wrapper{
+    border: 2px solid #FF0000;
+    padding: .7rem;
+    border-radius: 4px;
+    font-size: 2em;
+    line-height: 1.3em;
+  }
+  a{
+    margin-top: 1em;
+    text-decoration: none;
+    color: #FF0000;
+    border: 2px solid #FF0000;
+    padding: 1em;
+    border-radius: 4px;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.aboutme-form{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 190px;
+  h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-bottom: 2rem;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input{
+      width: 210px;
+      margin-top: .7rem;
+      margin-bottom: 2rem;
+      background-color: transparent;
+      border: none;
+      border-right: 2px solid #FF0000;
+      border-left: 2px solid #FF0000;
+      border-bottom: 2px solid #FF0000;
+      color: white;
+    }
+    textarea{
+      margin-top: .7rem;
+      margin-bottom: 2rem;
+      background-color: transparent;
+      border: none;
+      border-right: 2px solid #FF0000;
+      border-left: 2px solid #FF0000;
+      border-bottom: 2px solid #FF0000;
+      color: white;
+    }
+    button{
+      margin-bottom: 2rem;
+      width: 50%;
+      padding: .7rem;
+      color: white;
+      background-color: #161616;
+      border: 3px solid #FF0000;
+      border-radius: 4px;
+      text-transform: uppercase;
+
+    }
+  }
+}
+
+// RESPONSIVE
+
+@media only screen and (max-width: 1024px) {
+  .aboutme-container{
+    width: 900px;
+    min-width: 900px;
+    top: 150px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .aboutme-container{
+    width: 720px;
+    min-width: 720px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .aboutme-container{
+    width: 600px;
+    min-width: 600px;
+    top: 100px;
+    .aboutme-wrapper{
+      font-size: 1.3em;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutme-container{
+    top: 75px;
+    width: 480px;
+    min-width: 480px;
+    .aboutme-wrapper{
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .aboutme-container{
+    width: 300px;
+    min-width: 300px;
+  }
+}

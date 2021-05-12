@@ -1,0 +1,26 @@
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 0px;
+  height: 60px;
+  width: 100vw;
+  color: #FF0000;
+  background-color: black;
+  &-content{
+    margin: 0px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    img{
+      padding-right: 5em;
+      height: 50px;
+      width: 50px;
+    }
+  }
+}

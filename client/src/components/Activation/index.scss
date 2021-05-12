@@ -1,0 +1,20 @@
+.activation-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .activation-wrapper{
+    border: 2px solid #FF0000;
+    padding: 3em;
+    div{
+      display: flex;
+      margin-bottom: 1em;
+      width: 100%;
+      justify-content: center;
+    }
+    a{
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

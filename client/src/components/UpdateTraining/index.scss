@@ -1,0 +1,141 @@
+.update-content{
+  div{
+    display: flex;
+    justify-content: center;
+    h1{
+      position: relative;
+      text-align: center;
+      top: 70px;
+      font-size: 3em;
+      text-transform: uppercase;
+      padding-top: 2rem;
+      -webkit-text-stroke: 2px #FF0000;
+      color: transparent;
+      white-space: nowrap;
+    }
+  }
+  h1::before {
+    content: "You're adding a new exercise ...";
+    position: absolute;
+    display: inline-block;
+    white-space: nowrap;
+    padding-top: 2rem;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #FF0000;
+    -webkit-text-stroke: 0px #FF0000;
+    border-right: 2px solid #FF0000;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+  }
+  form{
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    input{
+      margin-bottom: 2rem;
+      margin-top: 1rem;
+      background-color: #161616;
+      border: none;
+      border-bottom: 2px solid #FF0000;
+      color: white;
+    }
+    select{
+      margin-bottom: 2rem;
+    }
+    button{
+      background-color: #161616;
+      border: 3px solid #FF0000;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 1rem;
+      border-radius: 4px;
+    }
+    .infos{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2em;
+      border: 2px solid white;
+      padding: 1em;
+      border-radius: 4px;
+      span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1em;
+        border: 2px solid white;
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        font-size: 2em;
+      }
+      p{
+        font-size: 1.3em;
+        color: red;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .smalllogo{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+  }
+  .update-content{
+    div{
+      h1{
+        font-size: 2.5em;
+        -webkit-text-stroke: 1.5px #FF0000;
+      }
+    }
+    form{
+      top: 125px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .update-content{
+    div{
+      h1{
+        font-size: 2em;
+        -webkit-text-stroke: 1.5px #FF0000;
+      }
+    }
+    form{
+      top: 100px;
+    }
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .update-content{
+    div{
+      h1{
+        font-size: 1.7em;
+        -webkit-text-stroke: 1.5px #FF0000;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  .update-content{
+    div{
+      h1{
+        font-size: 1.3em;
+        -webkit-text-stroke: 1px #FF0000;
+      }
+    }
+  }
+}

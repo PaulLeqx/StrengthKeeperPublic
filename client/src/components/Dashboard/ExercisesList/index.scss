@@ -1,0 +1,49 @@
+.chart{
+  margin-top: 5rem;
+  width: 80vw;
+  height: 60vh;
+}
+
+.exercise-delete {
+  border: 3px solid #FF0000;
+  background-color: #161616;
+  font-size: 1.2em;
+  padding: .5rem;
+  text-transform: uppercase;
+  border-radius: 4px;
+  color: white;
+}
+
+.exercise-delete:hover{
+  cursor: pointer;
+}
+
+//RESPONSIVE
+
+@media only screen and (max-width: 1024px) {
+  .chart{
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .chart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    .exercise-delete{
+      font-size: 1em;
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .chart{
+    width: 90vw;
+    canvas{
+      height: 800px
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.resetpassword{
+  width: 300px;
+  min-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 250px;
+    input{
+      background-color: transparent;
+      color: white;
+      border: 2px solid #FF0000;
+      border-radius: 4px;
+      margin-bottom: 2rem;
+    }
+    button{
+      background-color: #FF0000;
+      padding: .7rem;
+      color: white;
+    }
+  }
+  a{
+    color: #FF0000;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: 1.5em;
+  }
+}
