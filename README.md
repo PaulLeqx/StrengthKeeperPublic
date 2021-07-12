@@ -1,4 +1,4 @@
-# strenght-keeper
+# strength-keeper
 api to record personal workout perfs
 
 ## Stack
